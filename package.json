@@ -1,0 +1,33 @@
+{
+  "name": "new_portal",
+  "version": "2.0.0",
+  "description": "Bringing all merahunar job portals in one",
+  "main": "server.js",
+  "scripts": {
+    "client-install":"npm-install --prefix client",
+    "start":"node server.js",
+    "server":"npm start",
+    "client":"npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rajatshuklaofficial/merahunar_2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rajatshuklaofficial/merahunar_2/issues"
+  },
+  "homepage": "https://github.com/rajatshuklaofficial/merahunar_2#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.3",
+    "concurrently": "^4.1.0",
+    "express": "^4.16.4",
+    "jsonwebtoken": "^8.5.0",
+    "mongoose": "^5.4.15",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0"
+  }
+}
